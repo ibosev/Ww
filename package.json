@@ -1,0 +1,25 @@
+{
+  "name": "ww",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Ultimate Werewolf — multiplayer game (online + LAN)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "dev:server": "pnpm --filter @ww/server dev",
+    "dev:client": "pnpm --filter @ww/client dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4",
+    "@types/node": "^22.9.0"
+  }
+}
